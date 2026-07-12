@@ -66,7 +66,8 @@ export default function Overlay({ scrollYProgress }: OverlayProps) {
           style={{ opacity: buildOpacity, y: buildY }}
         >
           <h2 className="max-w-2xl text-4xl font-semibold leading-none text-white md:text-7xl">
-            I build digital experiences.
+            I uncover
+            <span className="block">hidden insights.</span>
           </h2>
         </motion.div>
 
@@ -75,7 +76,8 @@ export default function Overlay({ scrollYProgress }: OverlayProps) {
           style={{ opacity: bridgeOpacity, y: bridgeY }}
         >
           <h2 className="max-w-2xl text-right text-4xl font-semibold leading-none text-white md:text-7xl">
-            Bridging design and engineering.
+            Driving smarter
+            <span className="block">business decisions.</span>
           </h2>
         </motion.div>
 

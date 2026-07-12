@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <main className="relative min-h-screen bg-[#121212] text-white">
       <ScrollyCanvas />
-      <Projects />
       <Experience />
+      <Projects />
     </main>
   );
 }
