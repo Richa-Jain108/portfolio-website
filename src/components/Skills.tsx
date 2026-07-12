@@ -42,7 +42,10 @@ const SKILL_GROUPS = [
 
 export default function Skills() {
   return (
-    <section className="bg-[#121212] px-5 py-24 md:px-10 lg:px-16">
+    <section
+      id="skills"
+      className="scroll-mt-24 bg-[#121212] px-5 py-24 md:px-10 lg:px-16"
+    >
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 flex flex-col justify-between gap-6 border-b border-white/10 pb-8 md:flex-row md:items-end">
           <div>

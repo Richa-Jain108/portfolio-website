@@ -8,7 +8,10 @@ const EXPERIENCE_POINTS = [
 
 export default function Experience() {
   return (
-    <section className="bg-[#121212] px-5 py-24 md:px-10 lg:px-16">
+    <section
+      id="experience"
+      className="scroll-mt-24 bg-[#121212] px-5 py-24 md:px-10 lg:px-16"
+    >
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 border-b border-white/10 pb-8">
           <p className="mb-3 text-xs uppercase tracking-[0.32em] text-white/45">

@@ -33,24 +33,30 @@ function LinkedInIcon({ className }: { className?: string }) {
   );
 }
 
+const EMAIL = "richasj108@gmail.com";
+const EMAIL_HREF = `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}&su=${encodeURIComponent("Portfolio Inquiry")}`;
+
 const CONTACT_ITEMS = [
   {
     title: "Email",
-    value: "richasj108@gmail.com",
-    href: "mailto:richasj108@gmail.com",
+    value: EMAIL,
+    href: EMAIL_HREF,
     icon: Mail,
+    external: true,
   },
   {
     title: "LinkedIn",
     value: "linkedin.com/in/richa-jain108",
     href: "https://www.linkedin.com/in/richa-jain108/",
     icon: LinkedInIcon,
+    external: true,
   },
   {
     title: "GitHub",
     value: "github.com/Richa-Jain108",
     href: "https://github.com/Richa-Jain108",
     icon: GitHubIcon,
+    external: true,
   },
 ];
 
@@ -58,7 +64,10 @@ const RESUME_PATH = "/resume/Richa_Jain_Data_Analyst_Resume.pdf";
 
 export default function Contact() {
   return (
-    <section className="relative overflow-hidden bg-[#121212] px-5 py-24 md:px-10 lg:px-16">
+    <section
+      id="contact"
+      className="relative scroll-mt-24 overflow-hidden bg-[#121212] px-5 py-24 md:px-10 lg:px-16"
+    >
       <motion.div
         className="mx-auto max-w-7xl"
         initial={{ opacity: 0, y: 36 }}
@@ -118,8 +127,8 @@ export default function Contact() {
               <motion.a
                 key={item.title}
                 href={item.href}
-                target={item.href.startsWith("http") ? "_blank" : undefined}
-                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noopener noreferrer" : undefined}
                 className={className}
                 initial={{ opacity: 0, y: 22 }}
                 whileInView={{ opacity: 1, y: 0 }}

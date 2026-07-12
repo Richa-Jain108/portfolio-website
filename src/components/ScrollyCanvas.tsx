@@ -164,8 +164,9 @@ export default function ScrollyCanvas() {
 
   return (
     <section
+      id="home"
       ref={sectionRef}
-      className="relative h-[500vh] overflow-clip bg-[#121212]"
+      className="relative h-[500vh] scroll-mt-0 overflow-clip bg-[#121212]"
       aria-label="Introductory scrollytelling animation"
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden bg-[#121212]">
