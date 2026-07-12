@@ -19,11 +19,12 @@ export default function About() {
           <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/35 to-transparent" />
 
           <p className="relative z-10 text-base leading-7 text-white/72 md:text-lg md:leading-8">
-            Data Analyst with enterprise engineering experience and hands-on
-            expertise in SQL, Python, Tableau, and statistical analysis. I
-            transform real-world datasets into actionable business insights
-            through analytics, visualization, and data-driven problem solving
-            across e-commerce, retail, logistics, and streaming.
+            Data Analyst with enterprise engineering experience and a strong
+            foundation in SQL, Python, statistics, and data visualization.
+            Passionate about solving business problems through analytics,
+            uncovering actionable insights, and building data-driven solutions
+            backed by hands-on experience across retail, e-commerce, logistics,
+            and streaming analytics.
           </p>
         </article>
       </div>

@@ -39,9 +39,8 @@ export default function Overlay({ scrollYProgress }: OverlayProps) {
   return (
     <div className="pointer-events-none absolute inset-0 z-10">
       <div className="sticky top-0 h-screen overflow-hidden">
-        <div className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-5 py-5 text-[0.65rem] uppercase tracking-[0.28em] text-white/45 md:px-10">
+        <div className="absolute inset-x-0 top-0 z-20 px-5 py-5 text-[0.65rem] uppercase tracking-[0.28em] text-white/45 md:px-10">
           <span>Richa Jain</span>
-          <span>Portfolio</span>
         </div>
 
         <motion.div
