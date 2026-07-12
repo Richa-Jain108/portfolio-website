@@ -4,7 +4,6 @@ import {
   ArrowUpRight,
   Download,
   Mail,
-  MapPin,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -52,11 +51,6 @@ const CONTACT_ITEMS = [
     value: "github.com/Richa-Jain108",
     href: "https://github.com/Richa-Jain108",
     icon: GitHubIcon,
-  },
-  {
-    title: "Location",
-    value: "Pune, India",
-    icon: MapPin,
   },
 ];
 
@@ -119,21 +113,6 @@ export default function Contact() {
 
             const className =
               "group relative overflow-hidden rounded-lg border border-white/10 bg-white/[0.035] p-5 backdrop-blur-xl transition duration-500 hover:-translate-y-1 hover:border-white/24 hover:bg-white/[0.07] md:p-6";
-
-            if (!item.href) {
-              return (
-                <motion.div
-                  key={item.title}
-                  className={className}
-                  initial={{ opacity: 0, y: 22 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.55, delay: index * 0.06 }}
-                >
-                  {content}
-                </motion.div>
-              );
-            }
 
             return (
               <motion.a
