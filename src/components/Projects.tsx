@@ -22,12 +22,12 @@ const PROJECTS = [
     accent: "from-rose-400/20 to-white/0",
   },
   {
-    title: "Retail Purchase Analytics",
-    eyebrow: "Statistics / CLT",
+    title: "Shared Mobility Demand Analysis",
+    eyebrow: "Hypothesis Testing / ANOVA",
     description:
-      "Studied 550K+ Black Friday transactions to compare customer segments, quantify purchase behavior, and estimate confidence ranges.",
-    metric: "550K transactions analyzed",
-    link: "https://github.com/Richa-Jain108/walmart-customer-spending-analysis-clt",
+      "Analyzed 10.9K+ bike rental records using hypothesis testing to identify seasonal, operational, and environmental factors influencing shared mobility demand.",
+    metric: "65% YoY growth in average rentals",
+    link: "https://github.com/Richa-Jain108/yulu-bike-demand-analysis-hypothesis-testing",
     icon: LineChart,
     accent: "from-emerald-400/20 to-white/0",
   },
