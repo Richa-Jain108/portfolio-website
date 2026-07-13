@@ -40,7 +40,7 @@ export default function QuickLinks() {
 
             <li>
               <a
-                href="https://linkedin.com/in/richasudhirkumarjain"
+                href="https://www.linkedin.com/in/richa-jain108/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-block text-sm uppercase tracking-widest text-white/55 transition-colors duration-300"
