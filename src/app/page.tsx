@@ -1,5 +1,6 @@
 import ScrollyCanvas from "@/components/ScrollyCanvas";
 import Navbar from "@/components/Navbar";
+import QuickLinks from "@/components/QuickLinks";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -14,6 +15,7 @@ export default function Home() {
     <main className="relative min-h-screen bg-[#121212] text-white">
       <Navbar />
       <ScrollyCanvas />
+      <QuickLinks />
       <About />
       <Experience />
       <Projects />
