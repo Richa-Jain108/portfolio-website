@@ -12,13 +12,13 @@ const PROJECTS = [
     accent: "from-cyan-400/22 to-white/0",
   },
   {
-    title: "Netflix Content Strategy",
-    eyebrow: "Python / EDA",
+    title: "Logistics Route Optimization",
+    eyebrow: "Feature Engineering",
     description:
-      "Analyzed 8.8K+ titles to surface genre, region, duration, and release patterns for a sharper content acquisition strategy.",
-    metric: "8.8K titles modeled",
-    link: "https://github.com/Richa-Jain108/netflix-content-strategy-analysis",
-    icon: PanelTop,
+      "Engineered trip-level delivery features from shipment data to expose ETA gaps, route friction, and operational improvement areas.",
+    metric: "144.9K shipment rows processed",
+    link: "https://github.com/Richa-Jain108/delhivery-logistics-feature-engineering-analysis",
+    icon: Map,
     accent: "from-rose-400/20 to-white/0",
   },
   {
@@ -32,13 +32,13 @@ const PROJECTS = [
     accent: "from-emerald-400/20 to-white/0",
   },
   {
-    title: "Logistics Route Optimization",
-    eyebrow: "Feature Engineering",
+    title: "Netflix Content Strategy",
+    eyebrow: "Python / EDA",
     description:
-      "Engineered trip-level delivery features from shipment data to expose ETA gaps, route friction, and operational improvement areas.",
-    metric: "144.9K shipment rows processed",
-    link: "https://github.com/Richa-Jain108/delhivery-logistics-feature-engineering-analysis",
-    icon: Map,
+      "Analyzed 8.8K+ titles to surface genre, region, duration, and release patterns for a sharper content acquisition strategy.",
+    metric: "8.8K titles modeled",
+    link: "https://github.com/Richa-Jain108/netflix-content-strategy-analysis",
+    icon: PanelTop,
     accent: "from-violet-400/18 to-white/0",
   },
   {
