@@ -55,16 +55,13 @@ export default function Education() {
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             >
               <div className="md:sticky md:top-32 md:self-start">
-                <p className="text-base font-medium text-white/50 md:text-lg">
+                <p className="text-base font-medium text-[#8D8D8D] md:text-lg">
                   {edu.year}
                 </p>
               </div>
 
               <div className="space-y-3">
-                <h3
-                  className="text-2xl font-semibold uppercase tracking-wide md:text-3xl"
-                  style={{ color: "#D4A574" }}
-                >
+                <h3 className="text-2xl font-semibold uppercase tracking-wide text-white md:text-3xl">
                   {edu.degree}
                 </h3>
 
@@ -74,15 +71,18 @@ export default function Education() {
                   </p>
                 )}
 
-                <p className="text-base text-white/65 md:text-lg">
+                <p
+                  className="text-base md:text-lg"
+                  style={{ color: "#CFA37A" }}
+                >
                   {edu.institution}
                 </p>
 
                 {edu.university && (
-                  <p className="text-sm text-white/55">{edu.university}</p>
+                  <p className="text-sm text-[#8D8D8D]">{edu.university}</p>
                 )}
 
-                <p className="mt-4 max-w-3xl text-sm leading-7 text-white/58 md:text-base">
+                <p className="mt-4 max-w-3xl text-sm leading-7 text-[#8D8D8D] md:text-base">
                   {edu.description}
                 </p>
               </div>
