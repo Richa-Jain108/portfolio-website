@@ -8,7 +8,7 @@ const EDUCATION = [
     degree: "SPECIALIZATION IN DATA SCIENCE & MACHINE LEARNING",
     institution: "Scaler Academy",
     description:
-      "Comprehensive training in SQL, Python, Statistics, Probability, Data Analysis, Data Visualization, Tableau, Machine Learning, Deep Learning, Feature Engineering, Model Deployment, Data Structures & Algorithms, Business Case Studies and AI applications.",
+      "Comprehensive training in SQL, Python, Statistics, Probability, Data Analysis, Data Visualization, Tableau, Machine Learning, Deep Learning, Feature Engineering, Model Deployment, Business Case Studies and AI applications.",
   },
   {
     year: "2007 – 2011",
@@ -63,7 +63,7 @@ export default function Education() {
               <div className="space-y-3">
                 <h3
                   className="text-2xl font-semibold uppercase tracking-wide md:text-3xl"
-                  style={{ color: "#E39B6A" }}
+                  style={{ color: "#D4A574" }}
                 >
                   {edu.degree}
                 </h3>

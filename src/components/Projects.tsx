@@ -1,4 +1,4 @@
-import { ArrowUpRight, Database, LineChart, Map, PanelTop } from "lucide-react";
+import { ArrowUpRight, BarChart, Database, LineChart, Map, PanelTop } from "lucide-react";
 
 const PROJECTS = [
   {
@@ -41,6 +41,16 @@ const PROJECTS = [
     icon: Map,
     accent: "from-violet-400/18 to-white/0",
   },
+  {
+    title: "HR Workforce Analytics Dashboard",
+    eyebrow: "Tableau / Dashboard",
+    description:
+      "Designed an interactive Tableau dashboard analyzing workforce demographics, attrition, job satisfaction, and organizational KPIs to support HR decision-making.",
+    metric: "16.1% employee attrition analyzed",
+    link: "https://github.com/Richa-Jain108/HR-Analytics-Dashboard-Tableau",
+    icon: BarChart,
+    accent: "from-blue-900/40 to-slate-900/20",
+  },
 ];
 
 export default function Projects() {
@@ -66,7 +76,7 @@ export default function Projects() {
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">
-          {PROJECTS.map((project) => {
+          {PROJECTS.slice(0, 4).map((project) => {
             const Icon = project.icon;
 
             return (
@@ -113,6 +123,50 @@ export default function Projects() {
             );
           })}
         </div>
+
+        {PROJECTS[4] && (
+          <div className="mt-8 flex justify-center md:mt-12">
+            <a
+              href={PROJECTS[4].link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative w-full max-w-[60%] min-h-[22rem] overflow-hidden rounded-lg border border-white/10 bg-white/[0.035] p-6 backdrop-blur-xl transition duration-500 hover:-translate-y-1 hover:border-white/28 hover:bg-white/[0.07] md:p-8"
+            >
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${PROJECTS[4].accent} opacity-80 transition duration-500 group-hover:opacity-100`}
+              />
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+
+              <div className="relative z-10 flex h-full flex-col justify-between gap-14">
+                <div>
+                  <div className="mb-8 flex items-center justify-between">
+                    <div className="grid h-10 w-10 place-items-center rounded-md border border-white/12 bg-black/20 text-white/75">
+                      <BarChart className="h-5 w-5" aria-hidden="true" />
+                    </div>
+                    <ArrowUpRight
+                      className="h-5 w-5 text-white/35 transition duration-500 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-white"
+                      aria-hidden="true"
+                    />
+                  </div>
+
+                  <p className="mb-3 text-xs uppercase tracking-[0.24em] text-white/45">
+                    {PROJECTS[4].eyebrow}
+                  </p>
+                  <h3 className="max-w-xl text-2xl font-semibold leading-tight text-white md:text-3xl">
+                    {PROJECTS[4].title}
+                  </h3>
+                  <p className="mt-5 max-w-xl text-sm leading-6 text-white/62">
+                    {PROJECTS[4].description}
+                  </p>
+                </div>
+
+                <div className="border-t border-white/10 pt-5 text-sm text-white/78">
+                  {PROJECTS[4].metric}
+                </div>
+              </div>
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );
